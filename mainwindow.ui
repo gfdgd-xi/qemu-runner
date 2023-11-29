@@ -28,14 +28,14 @@
         <item row="2" column="3">
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
-           <widget class="QRadioButton" name="radioButton">
+           <widget class="QRadioButton" name="legecyBoot">
             <property name="text">
              <string>Legecy（传统启动）</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_2">
+           <widget class="QRadioButton" name="uefiBoot">
             <property name="text">
              <string>UEFI启动</string>
             </property>
@@ -292,7 +292,7 @@
        </spacer>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_2">
+       <widget class="QCheckBox" name="advancedModeCheckbox">
         <property name="text">
          <string>启用高级选项</string>
         </property>
@@ -315,7 +315,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>36</height>
+     <height>29</height>
     </rect>
    </property>
   </widget>

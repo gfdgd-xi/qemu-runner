@@ -1,0 +1,7 @@
+*.user*
+*.o
+Makefile
+moc_*
+.qmake.stash
+*qmake*
+qemu-runner

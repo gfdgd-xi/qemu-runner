@@ -15,7 +15,12 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_runQemu_clicked();
+
 private:
     Ui::MainWindow *ui;
+    QString systemArch;
+    void RunQemuEasy();
 };
 #endif // MAINWINDOW_H
