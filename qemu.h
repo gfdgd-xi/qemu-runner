@@ -49,8 +49,13 @@ public:
     int UseArmhfEFI();
     int UseLoongarch64EFI();
     int UseOtherEFI(QString fdFilePath);
+    int AddDiskSpace(QString path, double data);
 private:
     QString commandOption = "";
+    bool isUEFI = false;
+    QString GetBootLogoPath();
+    QString SystemInfo();
+    QString GetArch();
 
 };
 
