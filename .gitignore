@@ -1,7 +1,6 @@
 *.user*
-*.o
-Makefile
-moc_*
-.qmake.stash
-*qmake*
-qemu-runner
+__pycache__
+*.deb
+VM-source/Makefile
+*.rpm
+*.pro.user
