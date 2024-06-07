@@ -18,6 +18,10 @@ public:
 private slots:
     void on_runQemu_clicked();
 
+    void on_enableAdvancedOption_clicked(bool checked);
+
+    void on_advancedModeCheckbox_stateChanged(int arg1);
+
 private:
     Ui::MainWindow *ui;
     QString systemArch;

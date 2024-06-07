@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include "./ui_mainwindow.h"
 #include "command.h"
 #include "qemu.h"
 #include <iostream>
@@ -18,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
         // arm64
         ui->legecyBoot->setDisabled(1);
         ui->uefiBoot->setDisabled(1);
+        ui->uefiBoot->setChecked(1);
     }
 }
 
@@ -54,5 +55,17 @@ void MainWindow::on_runQemu_clicked()
     }
     // Easy mode
     RunQemuEasy();
+}
+
+
+void MainWindow::on_enableAdvancedOption_clicked(bool checked)
+{
+    ui->advancedTab->setEnabled(checked);
+}
+
+
+void MainWindow::on_advancedModeCheckbox_stateChanged(int arg1)
+{
+    ui->advancedTab->setEnabled(arg1);
 }
 

@@ -26,6 +26,7 @@ set(PROJECT_SOURCES
         ${TS_FILES}
 )
 
+
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(qemu-runner
         MANUAL_FINALIZATION
